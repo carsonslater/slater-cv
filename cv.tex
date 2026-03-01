@@ -1,0 +1,326 @@
+%-----------------------------------------------------------------------------------------------------------------------------------------------%
+%	The MIT License (MIT)
+%
+%	Copyright (c) 2021 Jitin Nair
+%
+%	Permission is hereby granted, free of charge, to any person obtaining a copy
+%	of this software and associated documentation files (the "Software"), to deal
+%	in the Software without restriction, including without limitation the rights
+%	to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+%	copies of the Software, and to permit persons to whom the Software is
+%	furnished to do so, subject to the following conditions:
+%	
+%	THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+%	IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+%	FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+%	AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+%	LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+%	OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+%	THE SOFTWARE.
+%	
+%
+%-----------------------------------------------------------------------------------------------------------------------------------------------%
+
+%----------------------------------------------------------------------------------------
+%	DOCUMENT DEFINITION
+%----------------------------------------------------------------------------------------
+
+% article class because we want to fully customize the page and not use a cv template
+\documentclass[a4paper,12pt]{article}
+
+%----------------------------------------------------------------------------------------
+%	FONT
+%----------------------------------------------------------------------------------------
+
+% % fontspec allows you to use TTF/OTF fonts directly
+% \usepackage{fontspec}
+% \defaultfontfeatures{Ligatures=TeX}
+
+% % modified for ShareLaTeX use
+% \setmainfont[
+% SmallCapsFont = Fontin-SmallCaps.otf,
+% BoldFont = Fontin-Bold.otf,
+% ItalicFont = Fontin-Italic.otf
+% ]
+% {Fontin.otf}
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES
+%----------------------------------------------------------------------------------------
+\usepackage{url}
+\usepackage{parskip} 	
+
+%other packages for formatting
+\RequirePackage{color}
+\RequirePackage{graphicx}
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage[scale=0.9]{geometry}
+
+%tabularx environment
+\usepackage{tabularx}
+
+%for lists within experience section
+\usepackage{enumitem}
+
+% centered version of 'X' col. type
+\newcolumntype{C}{>{\centering\arraybackslash}X} 
+
+%to prevent spillover of tabular into next pages
+\usepackage{supertabular}
+\usepackage{tabularx}
+\newlength{\fullcollw}
+\setlength{\fullcollw}{0.47\textwidth}
+
+%custom \section
+\usepackage{titlesec}				
+\usepackage{multicol}
+\usepackage{multirow}
+
+%CV Sections inspired by: 
+%http://stefano.italians.nl/archives/26
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{10pt}{10pt}
+
+%for publications
+\usepackage[style=authoryear,sorting=ynt, maxbibnames=2]{biblatex}
+
+%Setup hyperref package, and colours for links
+\usepackage[unicode, draft=false]{hyperref}
+\definecolor{linkcolour}{rgb}{0,0.2,0.6}
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour}
+\addbibresource{citations.bib}
+\setlength\bibitemsep{1em}
+
+%for social icons
+\usepackage{fontawesome5}
+
+%debug page outer frames
+%\usepackage{showframe}
+
+%----------------------------------------------------------------------------------------
+%	BEGIN DOCUMENT
+%----------------------------------------------------------------------------------------
+\begin{document}
+
+% non-numbered pages
+\pagestyle{empty} 
+
+%----------------------------------------------------------------------------------------
+%	TITLE
+%----------------------------------------------------------------------------------------
+
+% \begin{tabularx}{\linewidth}{ @{}X X@{} }
+% \huge{Your Name}\vspace{2pt} & \hfill \emoji{incoming-envelope} email@email.com \\
+% \raisebox{-0.05\height}\faGithub\ username \ | \
+% \raisebox{-0.00\height}\faLinkedin\ username \ | \ \raisebox{-0.05\height}\faGlobe \ mysite.com  & \hfill \emoji{calling} number
+% \end{tabularx}
+
+\begin{tabularx}{\linewidth}{@{} C @{}}
+\Huge{Carson Slater} \\[7.5pt]
+\href{https://github.com/carsonslater}{\raisebox{-0.05\height}\faGithub\ Github} \ $|$ \ 
+\href{https://www.linkedin.com/in/carsonslateratbaylor/}{\raisebox{-0.05\height}\faLinkedin\ LinkedIn} \ $|$ \ 
+\href{https://carsonslater.com}{\raisebox{-0.05\height}\faGlobe \ My Page} \ $|$ \ 
+\href{mailto:carsonslater7@gmail.com}{\raisebox{-0.05\height}\faEnvelope \ carsonslater7@gmail.com} \ $|$ \ 
+\href{tel:+14803208898}{\raisebox{-0.05\height}\faMobile \ +1.480.320.8898} \\
+\end{tabularx}
+
+%----------------------------------------------------------------------------------------
+% EXPERIENCE SECTIONS
+%----------------------------------------------------------------------------------------
+
+%Interests/ Keywords/ Summary
+\section{Summary}
+Motivated graduate student seeking consulting opportunities. Aspiring applied statistician who loves to use statistical methods to empower people with insights for good stewardship.
+
+
+%Papers
+%Projects
+\section{Papers}
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{Assessing the Effects of Surface-Stabilized Zero-Valent Iron Nanoparticles on Diverse} \\
+\textbf{Bacteria Species Using Complementary Statistical Models (March 2025)} & \hfill \hspace{-0.5cm} \href{https://doi.org/10.3390/jfb16030113}{Paper} \\[3.75pt]
+\multicolumn{2}{@{}X@{}}{\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt]
+        \item Used oridinal regression and generalized linear models to understand relationships between nanoparticle coatings and bactierial inhibition.
+    \end{itemize}
+    \end{minipage}
+    }  \\
+\end{tabularx}
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{Assessing Interference with Regression Analysis Techniques (April 2024)} & \hfill \href{https://doi.org/10.1109/WMCS62019.2024.10619025}{Paper} \\[3.75pt]
+\multicolumn{2}{@{}X@{}}{\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt]
+        \item Used generalized additive models to predict pairwise interference in a Dynamic Spectrum Access context.
+        \item Paper was presented at the \href{https://ieeexplore.ieee.org/xpl/conhome/10619012/proceeding}{2024 IEEE Texas Symposium on Wireless and Microwave Circuits and Systems (WMCS)}.
+    \end{itemize}
+    \end{minipage}
+    }  \\
+\end{tabularx}
+
+
+
+%Projects
+\section{Projects}
+
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{Mo(Wa)$^2$TER Introduction to Data Science Course Material} & \hfill \href{https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/BZJW2E}{Harvard Dataverse} \\[3.75pt]
+\multicolumn{2}{@{}X@{}}{\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt]
+        \item Edited and compiled material with Dr. Mandy Hering on her contributions to the National Science Foundation Harnessing the Data Revolution: Data Science Corps project (Grant no. #1924146).
+    \end{itemize}
+    \end{minipage}
+    }  \\
+\end{tabularx}
+
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{Forecasting Demand With Generalized Additive Models} & \hfill \href{https://github.com/carsonslater/mentored_research2022}{Link to Github} \\[3.75pt]
+\multicolumn{2}{@{}X@{}}{\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt]
+        \item Built time-series forecasting models to predict quantity-demanded for fast-moving consumer goods in Indonesia.
+        \item Presented poster at University of Illinois – Chicago’s 2022 \href{https://homepages.math.uic.edu/ums/}{Undergraduate Mathematics Symposium} and Wheaton College’s 2022 Homecoming STEM Poster Session.
+    \end{itemize}
+    \end{minipage}
+    }  \\
+\end{tabularx}
+
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{Understanding and Modeling Predictors to Earned Run Average in Modern Major League} \\ \textbf{Baseball} & \null\\[3.75pt]
+\multicolumn{2}{@{}X@{}}{\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt]
+        \item Conducted variable selection using predictors from the Lahman baseball database to model Earned Run Average using regression analysis. Used the same predictors to build a single-layer neural network and a radial support vector regression model in R/RStudio.
+    \end{itemize}
+    \end{minipage}
+    }  \\
+\end{tabularx}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+\section{Education}
+\begin{tabularx}{\linewidth}{@{}l X@{}}	
+2024 - Pending & \textbf{PhD Statistical Science} \hfill   \\ 
+\null & Baylor University, Waco, TX \vspace{0.3cm}\\
+2023 - 2024 & \textbf{M.S. Statistical Science} \hfill (GPA: 3.75/4.0)  \\ 
+\null & Baylor University, Waco, TX \vspace{0.3cm}\\
+2019 - 2023 & \textbf{B.S. Applied Mathematics with Statistics} \hfill (GPA: 3.46/4.0) \\ 
+\null & \textbf{B.A. Economics} \\
+\null & Wheaton College, Wheaton, IL \\
+\null & \textit{Edman Presidential Scholarship} \\
+
+\end{tabularx}
+
+
+%----------------------------------------------------------------------------------------
+%	SKILLS
+%----------------------------------------------------------------------------------------
+\section{Skills}
+\begin{tabularx}{\linewidth}{@{}l X@{}}
+Software Tools:  &  \normalsize{Docker, RStudio, Git/Github, reveal.js, Positron.} \vspace{0.3cm}\\  
+Software Languages: & \normalsize{R, JAGS/Stan, Python, C, SAS, Stata, SQL, zsh, \LaTeX, JavaScript, CSS, HTML}\vspace{0.25cm}\\
+Relevant Coursework: &  \normalsize{Bayesian Methods in Statistics,  Survival Analysis, Time Series, Theory of Statistics, Statistical Methods, Computational Statistics, Numerical Analysis, Linear Algebra for Data Analysis, Mathematical Statistics, Machine Learning, Probability Theory, Real Analysis, Intensive Introduction to Computer Science (\textit{Harvard}), Econometrics, Economics of Labor and Poverty.}\\
+\\
+\end{tabularx}
+
+\section{Employment}
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{Research Assistant} & \hfill January 2024 - present \\[3.75pt]
+\textit{Baylor University Department of Statistical Science} \\
+\multicolumn{2}{@{}X@{}}{
+\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt]
+        \item Conducts research with Dr. Mandy Hering, working with outside collaborators in urban water treatment and infrastructure.
+    \end{itemize}
+    \end{minipage}
+    }  \\
+\end{tabularx}
+
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{Graduate Assistant} & \hfill August 2023 - December 2024 \\[3.75pt]
+\textit{Baylor University Department of Statistical Science} \\
+\multicolumn{2}{@{}X@{}}{
+\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt]
+        \item Collaborated at Baylor University in the Statistical Consulting Center on cutting edge research in various departments. 
+        \item Graded and operated as teaching assistant for both the undergraduate and graduate offerings of Computational Statistics (STA 4373/5373/6375) with Dr. David Kahle.
+        \item Lead four supplemental instructorship sections per week for Baylor's Introduction to Statistical Methods course (STA 2381).
+    \end{itemize}
+    \end{minipage}
+    }  \\
+\end{tabularx}
+
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{Academic Coach} & \hfill January 2023 - Mar 2023 \\[3.75pt]
+\textit{Wheaton Academy Center for Lifelong Learning} \\
+\multicolumn{2}{@{}X@{}}{
+\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt]
+        \item Mentored students 1-on-1 per their request to teach, review, and sharpen their math skills. I met with students ranging in courses from Algebra I to AP Statistics to help them prepare for their exams, whether it’s ones for courses or AP exams.
+    \end{itemize}
+    \end{minipage}
+    }  \\
+\end{tabularx}
+
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{Mathematics Teaching Assistant} & \hfill August 2022 - May 2023 \\[3.75pt]
+\textit{Wheaton College Department of Mathematics and Computer Science} \\
+\multicolumn{2}{@{}X@{}}{
+\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt]
+        \item Served as Applied Machine Learning TA (MATH 465) from December 2022 to present, and the Probability Theory TA (MATH 363) from August 2022 to December 2022.
+        \item Graded weekly homework assignments and hosted weekly help sessions for students.
+    \end{itemize}
+    \end{minipage}
+    }  \\
+\end{tabularx}
+
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{Participant} & \hfill June 2022 - July 2022 \\[3.75pt]
+\textit{Duke/North Carolina State University Summer Institute for Biostatistics} \\
+\multicolumn{2}{@{}X@{}}{
+\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt]
+        \item Participated in several classroom discussions to engage standard biostatistical methods and areas of study at Duke Clinical Research Institute and North Carolina State University.
+        \item Culminated in a Hackathon studying and modeling myocardial infarction and associated complications. \href{https://github.com/carsonslater/sibs_summer2022}{Link to Github} for our Hackathon project.
+    \end{itemize}
+    \end{minipage}
+}
+\end{tabularx}
+
+\section{Volunteer}
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{Intern} & \hfill June 2023 - August 2023 \\[3.75pt]
+\textit{Křesťanská Akademie Mladých} \\
+\multicolumn{2}{@{}X@{}}{
+\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt]
+        \item Support-raised for four months and built a \href{https://carsonslater.com/tags/blog/}{blog} from scratch to keep supporters in the loop.
+        \item Lived and worked in in the Czech Republic for two and a half months while assisting local CB churches by teaching English and sports in schools and at camps. Onboarded and trained short-term mission teams from the U.S. and Ireland who staffed English camps.
+    \end{itemize}
+    \end{minipage}
+}
+\end{tabularx}
+
+\section{Honors/Awards}
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{Varsity Baseball Player} & \hfill August 2019 - May 2022 \\[3.75pt]
+\textit{Wheaton College Athletics, NCAA} \\
+\multicolumn{2}{@{}X@{}}{
+\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt]
+        \item  Practiced baseball six days a week for multiple hours and played over forty-games during the spring semester.
+    \end{itemize}
+    \end{minipage}
+}
+\end{tabularx}
+\begin{tabularx}{\linewidth}{ @{}l r@{} }
+\textbf{Christian Character Award} & \hfill May 2019 \\[3.75pt]
+\textit{Valley Christian High School, Chandler AZ} \\
+\multicolumn{2}{@{}X@{}}{
+\begin{minipage}[t]{\linewidth}
+    \begin{itemize}[nosep,after=\strut, leftmargin=1em, itemsep=3pt]
+        \item  This award is extended to one graduating Senior at Valley Christian High School who, in their four years at the institution, has most consistently exemplified Christ-like character, lived above reproach, and exhibited a passion for the gospel.
+    \end{itemize}
+    \end{minipage}
+}
+\end{tabularx}
+\end{document}
