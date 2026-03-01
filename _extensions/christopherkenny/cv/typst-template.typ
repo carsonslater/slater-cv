@@ -107,7 +107,6 @@
     if n_contacts > 0 {
       grid(
         columns: approx_fills,
-        inset: 0pt,
         gutter: 0pt,
         ..contact_block.map(contact => align(center, {
           contact
@@ -174,9 +173,7 @@
     v(-0.5em)
     for uni in info.values().at(i) {
       grid(
-        inset: 0pt,
         columns:(4fr, 1fr),
-        align: (left, right),
         gutter: 0pt,
         uni.degree, proc-years(uni.year)
       )
@@ -196,7 +193,6 @@
 
       grid(
           columns:(4fr, 1fr),
-          align: (left, right),
           gutter: 0pt,
           job.position, if "year" in job { proc-years(job.year) } else { "" }
       )
@@ -216,7 +212,6 @@
 
       grid(
           columns:(4fr, 1fr),
-          align: (left, right),
           gutter: 0pt,
           job.position, if "year" in job { proc-years(job.year) } else { "" }
       )
@@ -230,7 +225,6 @@
   for honor in honors {
     grid(
       columns: (1fr, 11fr),
-      align: (left, left),
       gutter: 0.75em,
       // Show year if it exists
       if "year" in honor { str(honor.year) } else { "" },

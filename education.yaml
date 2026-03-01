@@ -1,46 +1,32 @@
 education:
-  Princeton University:
-    - degree: Ph.D.
+  Baylor University:
+    - degree: PhD Statistical Science
       year:
-        end: 1959
-    - degree: M.A.
+        start: 2024
+        end: Pending
+    - degree: M.S. Statistical Science
       year:
-        end: 1957
-  Harvard College:
-    - degree: B.A.
+        start: 2023
+        end: 2024
+      description: "(GPA: 3.75/4.0)"
+  Wheaton College:
+    - degree: B.S. Applied Mathematics with Statistics
       year:
-        end: 1953
-        start: 1949
+        start: 2019
+        end: 2023
+      description: "(GPA: 3.46/4.0), B.A. Economics, Edman Presidential Scholarship"
 
 appointments:
-  Harvard University:
-  - position: Director of the Harvard University Library emeritus
+  Baylor University:
+  - position: Research Assistant
     year:
-      start: 1984
-  - position: Associate Dean for Undergraduate Education, Faculty of Arts and Sciences
+      start: 2024
+  - position: Graduate Assistant
     year:
-      end: 1984
-      start: 1981
-  - position: Clarence Dillon Professor of International Affairs
+      start: 2023
+      end: 2024
+  Wheaton College:
+  - position: Mathematics Teaching Assistant
     year:
-      end: 1984
-      start: 1983
-  University of Chicago:
-  - position: Professor of Political Science
-    year:
-      end: 1972
-      start: 1968
-  - position: Senior Study Director, National Opinion Research Center
-    year:
-      end: 1972
-      start: 1968
-  Stanford University:
-  - position: Professor of Political Science
-    year:
-      end: 1968
-      start: 1964
-  Princeton University:
-  - position: Assistant and Associate Professor of Politics
-    year:
-      end: 1964
-      start: 1960
+      start: 2022
+      end: 2023
