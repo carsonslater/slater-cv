@@ -95,11 +95,11 @@
     }
     if "email" in author {
       contact_block.push([#link("mailto:" + to-string(author.email))])
-      approx_fills.push(2fr)
+      approx_fills.push(1fr)
     }
     if "website" in author {
       contact_block.push([#link(to-string(author.website))])
-      approx_fills.push(3fr)
+      approx_fills.push(1fr)
     }
 
     let n_contacts = contact_block.len()
@@ -169,14 +169,18 @@
   let n_uni = info.len()
 
   for i in range(n_uni) {
-    text(weight: "bold", size: 16pt, info.keys().at(i))
+    align(left, text(weight: "bold", size: 16pt, info.keys().at(i)))
     v(-0.5em)
     for uni in info.values().at(i) {
       grid(
         columns:(4fr, 1fr),
         gutter: 0pt,
-        uni.degree, proc-years(uni.year)
+        uni.degree, align(right, if "year" in uni { proc-years(uni.year) } else { "" })
       )
+      if "description" in uni {
+        v(-0.5em)
+        text(size: 0.9em, style: "italic", uni.description)
+      }
     }
   }
 }
@@ -187,15 +191,19 @@
   let n_jobs = info.len()
 
   for i in range(n_jobs) {
-    text(weight: "bold", size: 16pt, info.keys().at(i))
+    align(left, text(weight: "bold", size: 16pt, info.keys().at(i)))
     v(-0.5em)
     for job in info.values().at(i) {
 
       grid(
           columns:(4fr, 1fr),
           gutter: 0pt,
-          job.position, if "year" in job { proc-years(job.year) } else { "" }
+          job.position, align(right, if "year" in job { proc-years(job.year) } else { "" })
       )
+      if "description" in job {
+        v(-0.5em)
+        text(size: 0.9em, style: "italic", job.description)
+      }
     }
   }
 }
@@ -206,15 +214,19 @@
   let n_jobs = info.len()
 
   for i in range(n_jobs) {
-    text(weight: "bold", size: 16pt, info.keys().at(i))
+    align(left, text(weight: "bold", size: 16pt, info.keys().at(i)))
     v(-0.5em)
     for job in info.values().at(i) {
 
       grid(
           columns:(4fr, 1fr),
           gutter: 0pt,
-          job.position, if "year" in job { proc-years(job.year) } else { "" }
+          job.position, align(right, if "year" in job { proc-years(job.year) } else { "" })
       )
+      if "description" in job {
+        v(-0.5em)
+        text(size: 0.9em, style: "italic", job.description)
+      }
     }
   }
 }

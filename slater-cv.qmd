@@ -1,11 +1,9 @@
 ---
 author:
   - name: Carson Slater
-    url: https://carsonslater.com
+    url: https://carsonslater.github.io
     phone: +1.480.320.8898
     email: "carsonslater7@gmail.com"
-    degrees:
-      - PhD Student
     affiliations:
       - name: Baylor University
         department: Department of Statistical Science
@@ -14,6 +12,7 @@ date: today
 format:
   cv-typst:
     keep-typ: false
+    linkcolor: "#154734"
 csl: "revsort-chicago-author-date.csl"
 bibliography:
   books: "books.bib"
@@ -24,7 +23,7 @@ nocite: '@*'
 
 ## Summary
 
-Motivated graduate student seeking consulting opportunities. Aspiring applied statistician who loves to use statistical methods to empower people with insights for good stewardship.
+Aspiring data scientist who loves to use statistical methods to empower people with insights for good stewardship.
 
 ## Education
 
@@ -34,18 +33,16 @@ Motivated graduate student seeking consulting opportunities. Aspiring applied st
 
 {{< cv appointments education.yaml >}}
 
-## Peer-Reviewed Articles
+<!-- {{< cv positions positions.yaml >}} -->
+
+## Peer-Reviewed Works
 
 :::{#refs-articles}
 :::
 
 ## Projects
 
-**Mo(Wa)$^2$TER Introduction to Data Science Course Material** [Harvard Dataverse](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/BZJW2E)
-
-- Edited and compiled material with Dr. Mandy Hering on her contributions to the National Science Foundation Harnessing the Data Revolution: Data Science Corps project (Grant no. #1924146).
-
-**Forecasting Demand With Generalized Additive Models** [Link to Github](https://github.com/carsonslater/mentored_research2022)
+**Forecasting Fast-Moving Consumer Good Demand With Generalized Additive Models** [Link to Github](https://github.com/carsonslater/mentored_research2022)
 
 - Built time-series forecasting models to predict quantity-demanded for fast-moving consumer goods in Indonesia.
 - Presented poster at University of Illinois – Chicago’s 2022 Undergraduate Mathematics Symposium and Wheaton College’s 2022 Homecoming STEM Poster Session.
@@ -56,11 +53,15 @@ Motivated graduate student seeking consulting opportunities. Aspiring applied st
 
 ## Skills
 
-**Software Tools**: Docker, RStudio, Git/Github, reveal.js, Positron.
+**Technology**: Docker, Positron ($\approx$ VS Code), Git/Github, reveal.js, R/RStudio, SQL, duckDB.
 
-**Software Languages**: R, JAGS/Stan, Python, C, SAS, Stata, SQL, zsh, LaTeX, JavaScript, CSS, HTML.
+**Python**: pandas, numpy, PyTorch (Lightning), plotnine, seaborn, plotly, scikit‑learn, Jupyter
 
-**Relevant Coursework**: Bayesian Methods in Statistics, Survival Analysis, Time Series, Theory of Statistics, Statistical Methods, Computational Statistics, Numerical Analysis, Linear Algebra for Data Analysis, Mathematical Statistics, Machine Learning, Probability Theory, Real Analysis, Intensive Introduction to Computer Science (*Harvard*), Econometrics, Economics of Labor and Poverty.
+**R**: tidyverse (dplyr, ggplot2, etc.), TensorFlow (Keras), torch, shiny, RMarkdown/Quarto, rstan, rjags, caret, tidymodels, targets (gittargets, proffer, etc.)
+
+**Statistics and Machine Learning**: statistical modeling, hypothesis testing, mixture models, time series, regression, linear mixed models, clustering, classification, deep learning, PCA, random forests, ensemble models (e.g., XGBoost), SVM, Bayesian methods
+
+**Relevant Coursework**: Statistical Bioinformatics, Deep Learning, Bayesian Methods in Statistics, Survival Analysis, Time Series, Theory of Statistics, Statistical Methods, Computational Statistics, Numerical Analysis, Linear Algebra for Data Analysis, Mathematical Statistics, Machine Learning, Probability Theory, Real Analysis, Intensive Introduction to Computer Science (*Harvard*), Econometrics, Economics of Labor and Poverty.
 
 ## Honors & Awards
 
