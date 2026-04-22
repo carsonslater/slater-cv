@@ -7,18 +7,22 @@ author:
     affiliations:
       - name: Baylor University
         department: Department of Statistical Science
-    title: "Graduate Research Assistant"
+    title: "Research Assistant"
 date: today
-format:
-  cv-typst:
-    keep-typ: false
-    linkcolor: "#154734"
 csl: "revsort-chicago-author-date.csl"
 bibliography:
   books: "books.bib"
   bookchapters: "book_chapters.bib"
   articles: "journal_articles.bib"
 nocite: '@*'
+format:
+  cv-typst:
+    keep-typ: false
+    linkcolor: "#154734"
+    include-in-header: 
+      - text: |
+          #show regex("Slater"): strong
+          #show regex("Carson"): strong
 ---
 
 ## Summary
@@ -53,15 +57,15 @@ Aspiring data scientist who loves to use statistical methods to empower people w
 
 ## Skills
 
-**Technology**: Docker, Positron ($\approx$ VS Code), Git/Github, reveal.js, R/RStudio, SQL, duckDB.
+**Technology**: Docker, Positron ($\approx$ VS Code), Git/Github, reveal.js, R/RStudio, SQL, duckDB, LaTeX.
 
 **Python**: pandas, numpy, PyTorch (Lightning), plotnine, seaborn, plotly, scikit‑learn, Jupyter
 
 **R**: tidyverse (dplyr, ggplot2, etc.), TensorFlow (Keras), torch, shiny, RMarkdown/Quarto, rstan, rjags, caret, tidymodels, targets (gittargets, proffer, etc.)
 
-**Statistics and Machine Learning**: statistical modeling, hypothesis testing, mixture models, time series, regression, linear mixed models, clustering, classification, deep learning, PCA, random forests, ensemble models (e.g., XGBoost), SVM, Bayesian methods
+**Statistics and Machine Learning**: statistical modeling, hypothesis testing, mixture models, time series, regression, linear mixed models, clustering, classification, deep learning, PCA, random forests, ensemble models (e.g., XGBoost), SVM, Bayesian methods, spatiotemporal modeling
 
-**Relevant Coursework**: Statistical Bioinformatics, Deep Learning, Bayesian Methods in Statistics, Survival Analysis, Time Series, Theory of Statistics, Statistical Methods, Computational Statistics, Numerical Analysis, Linear Algebra for Data Analysis, Mathematical Statistics, Machine Learning, Probability Theory, Real Analysis, Intensive Introduction to Computer Science (*Harvard*), Econometrics, Economics of Labor and Poverty.
+**Relevant Coursework**: Statistical Bioinformatics, Deep Learning, Bayesian Methods, Bayesian Theory, Survival Analysis, Time Series, Theory of Statistics, Statistical Methods, Computational Statistics, Numerical Analysis, Linear Algebra for Data Analysis, Mathematical Statistics, Machine Learning, Probability Theory, Real Analysis, Intensive Introduction to Computer Science (*Harvard*), Econometrics, Economics of Labor and Poverty.
 
 ## Honors & Awards
 

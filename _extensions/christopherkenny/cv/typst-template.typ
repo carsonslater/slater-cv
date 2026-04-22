@@ -173,7 +173,7 @@
     v(-0.5em)
     for uni in info.values().at(i) {
       grid(
-        columns:(4fr, 1fr),
+        columns:(3fr, 1fr),
         gutter: 0pt,
         uni.degree, align(right, if "year" in uni { proc-years(uni.year) } else { "" })
       )
@@ -196,7 +196,7 @@
     for job in info.values().at(i) {
 
       grid(
-          columns:(4fr, 1fr),
+          columns:(3fr, 1fr),
           gutter: 0pt,
           job.position, align(right, if "year" in job { proc-years(job.year) } else { "" })
       )
@@ -219,7 +219,7 @@
     for job in info.values().at(i) {
 
       grid(
-          columns:(4fr, 1fr),
+          columns:(3fr, 1fr),
           gutter: 0pt,
           job.position, align(right, if "year" in job { proc-years(job.year) } else { "" })
       )
