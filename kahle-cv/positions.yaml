@@ -1,0 +1,14 @@
+positions:
+  Wheaton Academy Center for Lifelong Learning:
+    - position: Academic Coach
+      year:
+        start: 2023
+        end: 2023
+      description: "Mentored students 1-on-1 to sharpen math skills from Algebra I to AP Statistics."
+
+  Křesťanská Akademie Mladých (CZ):
+    - position: Volunteer Intern
+      year:
+        start: 2023
+        end: 2023
+      description: "Assisting local CB churches by teaching English and sports in Czech Republic schools and camps."

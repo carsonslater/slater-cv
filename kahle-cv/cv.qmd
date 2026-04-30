@@ -1,0 +1,96 @@
+---
+author:
+  - name: Carson Slater
+    url: https://carsonslater.github.io
+    phone: (480) 320-8898
+    email: carsonslater7@gmail.com
+    affiliations:
+      - name: Baylor University
+        department: Department of Statistical Science
+date: today
+format:
+  typst:
+    template: template.typ
+---
+
+```{=typst}
+#section("Contact Information", [
+  #grid(
+    columns: (1fr, 1fr),
+    [
+      Department of Statistical Science \
+      Baylor University \
+      One Bear Place #97140 \
+      Waco, Texas 76798, USA
+    ],
+    [
+      #grid(
+        columns: (0.6in, 1fr),
+        gutter: 0.5em,
+        [Phone], [(480) 320-8898],
+        [E-mail], [#link("mailto:carsonslater7@gmail.com")],
+        [WWW], [#link("https://carsonslater.github.io")]
+      )
+    ]
+  )
+])
+
+#section("Research Interests", [
+  Time series clustering, anomaly detection, and nonhomogenous hidden markov models with applications in urban water distribution and advanced metering infrastructure technologies.
+])
+
+#section("Education", [
+  #list-education("education.yaml")
+  #entry(
+    institution: "Wheaton College (IL)",
+    date: "2019-2023",
+    description: [
+      B.S. Applied Mathematics with Statistics \
+      B.A. Economics \
+      Edman Presidential Scholarship
+    ]
+  )
+])
+
+#section("Professional Experience", [
+  #list-appointments("education.yaml")
+])
+
+#section("Articles in Preparation", [
+  #citation(
+    authors: "Carson Slater, Ryan Shepler, Samantha Bryan, and Amanda S. Hering",
+    year: "2026",
+    title: "Identifying Outdoor Watering Events with High-Frequency Metering Data to Assess Residential Water Consumption",
+    venue: "In Preparation"
+  )
+])
+
+#section("Peer-Reviewed Publications", [
+  #list-bibliography("journal_articles.bib")
+])
+
+#section("Conference Proceedings and Other Articles", [
+  #citation(
+    authors: "Jonathan E. Swindell, Carson Slater, Samuel Hussey, Charles Baylis, and Robert J. Marks",
+    year: "2024",
+    title: "Assessing Interference with Regression Analysis Techniques",
+    venue: "2024 IEEE Texas Symposium on Wireless and Microwave Circuits and Systems (WMCS)",
+    url: "https://doi.org/10.1109/WMCS62019.2024.10619025"
+  )
+  #citation(
+    authors: "Amanda S. Hering, Douglas Nychka, Luke Durell, Carson Slater, Michael Poor, Greg Hamerly, and Tzahi Y. Cath",
+    year: "2024",
+    title: "Mo(Wa)²TER Introduction to Data Science Course Material",
+    venue: "Harvard Dataverse",
+    url: "https://doi.org/10.7910/DVN/BZJW2E"
+  )
+])
+
+#section("Honors & Awards", [
+  #list-honors("honors.yaml")
+])
+
+#section("Service & Volunteer", [
+  #list-positions("positions.yaml")
+])
+```
