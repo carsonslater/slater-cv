@@ -12,6 +12,23 @@
 
 #let baylor-blue = rgb("#003087")
 
+#let latex = {
+  set text(font: "New Computer Modern", weight: "regular")
+  box(stack(dir: ltr,
+    [L],
+    h(-0.25em),
+    move(dy: -0.2em, text(size: 0.7em)[A]),
+    h(-0.25em),
+    [T],
+    h(-0.15em),
+    move(dy: 0.2em, [E]),
+    h(-0.15em),
+    [X]
+  ))
+}
+
+#show bibliography: set par(hanging-indent: 0pt)
+
 #let cv(
   authors: (),
   name: none,
@@ -31,6 +48,7 @@
   set par(
     justify: true,
     leading: 0.55em,
+    hanging-indent: 0pt,
   )
   set text(
     lang: lang,
@@ -44,7 +62,6 @@
   show "Baylor University": name => text(fill: baylor-blue, weight: "bold")[#name]
   show regex("Slater"): strong
   show regex("Carson"): strong
-  show bibliography: set par(hanging-indent: 0pt)
 
   // Header
   // Use explicit name if provided, otherwise try authors list
@@ -66,7 +83,7 @@
   grid(
     columns: (1.7in, 1fr),
     gutter: 1.2em,
-    [#set text(weight: "bold", size: 9pt, hyphenate: false); #upper(title)],
+    [#set text(weight: "bold", size: 9pt, hyphenate: false); #set par(justify: false); #upper(title)],
     [#content]
   )
   v(1.2em)
@@ -89,12 +106,13 @@
   v(0em)
 }
 
-#let citation(authors: none, year: none, title: none, venue: none, url: none) = {
+#let citation(authors: none, year: none, title: none, venue: none, url: none, note: none) = {
   block(width: 100%)[
     #if authors != none [#authors. ]
     #if year != none [#year. ]
     #if title != none ["#title". ]
     #if venue != none [#text(style: "italic")[#venue]. ]
+    #if note != none [#text(size: 0.85em, weight: "bold", fill: gray)[(#note)] ]
     #if url != none [#link(url)]
   ]
   v(0.6em)
@@ -173,6 +191,7 @@
 }
 
 #let list-bibliography(file) = {
+  set par(hanging-indent: 0pt)
   bibliography(file, title: none, full: true, style: "chicago-author-date")
 }
 

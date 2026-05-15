@@ -66,10 +66,16 @@ format:
 ])
 
 #section("Peer-Reviewed Publications", [
-  #list-bibliography("journal_articles.bib")
+  #citation(
+    authors: "Brittany J. Carnathan, Dinny Stevens, Swarna Shikha, Carson Slater, Nathen Byford, Rodney X. Sturdivant, Kuzy Zarzosa, W. Evan Braswell, and Christie M. Sayes",
+    year: "2025",
+    title: "Assessing the Effects of Surface-Stabilized Zero-Valent Iron Nanoparticles on Diverse Bacteria Species Using Complementary Statistical Models",
+    venue: "Journal of Functional Biomaterials 16 (3)",
+    url: "https://doi.org/10.3390/jfb16030113"
+  )
 ])
 
-#section("Conference Proceedings and Other Articles", [
+#section("Conference Proceedings & Other Articles", [
   #citation(
     authors: "Jonathan E. Swindell, Carson Slater, Samuel Hussey, Charles Baylis, and Robert J. Marks",
     year: "2024",
@@ -84,6 +90,13 @@ format:
     venue: "Harvard Dataverse",
     url: "https://doi.org/10.7910/DVN/BZJW2E"
   )
+  #citation(
+    authors: "Carson Slater and Ying Li",
+    year: "2022",
+    title: "Forecasting Fast-Moving Consumer Goods with Generalized Additive Models",
+    venue: "2022 University of Illinois Chicago Undergraduate Mathematics Symposium",
+    note: "Poster Presentation"
+  )
 ])
 
 #section("Honors & Awards", [
@@ -92,5 +105,16 @@ format:
 
 #section("Service & Volunteer", [
   #list-positions("positions.yaml")
+])
+
+#section("Skills", [
+  #grid(
+    columns: (1.2in, 1fr),
+    gutter: 0.8em,
+    [*Technology*], [Docker, Positron ($approx$ VS Code), Git/Github, reveal.js, R/RStudio, SQL, duckDB, #latex.],
+    [*Python*], [pandas, numpy, PyTorch (Lightning), plotnine, seaborn, plotly, scikit‑learn, Jupyter],
+    [*R*], [tidyverse (dplyr, ggplot2, etc.), TensorFlow (Keras), torch, shiny, RMarkdown/Quarto, rstan, rjags, caret, tidymodels, targets (gittargets, proffer, etc.)],
+    [*Statistics*], [statistical modeling, hypothesis testing, mixture models, time series, regression, linear mixed models, clustering, classification, deep learning, PCA, random forests, ensemble models (e.g., XGBoost), SVM, Bayesian methods, spatiotemporal modeling]
+  )
 ])
 ```
