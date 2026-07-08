@@ -1,0 +1,128 @@
+---
+author:
+  - name: Carson Slater
+    url: https://carsonslater.github.io
+    phone: (480) 320-8898
+    email: carsonslater7@gmail.com
+    affiliations:
+      - name: Baylor University
+        department: Department of Statistical Science
+date: today
+format:
+  typst:
+    template: template.typ
+---
+
+```{=typst}
+#section("Contact Information", [
+  #grid(
+    columns: (1fr, 1fr),
+    [
+      Department of Statistical Science \
+      Baylor University \
+      One Bear Place #97140 \
+      Waco, Texas 76798, USA
+    ],
+    [
+      #grid(
+        columns: (0.6in, 1fr),
+        gutter: 0.5em,
+        [Phone], [(480) 320-8898],
+        [E-mail], [#link("mailto:carsonslater7@gmail.com")],
+        [WWW], [#link("https://carsonslater.github.io")]
+      )
+    ]
+  )
+])
+
+#section("Research Interests", [
+  Time series clustering, anomaly detection, and nonhomogenous hidden markov models with applications in urban water distribution and advanced metering infrastructure technologies.
+])
+
+#section("Education", [
+  #list-education("education.yaml")
+  #entry(
+    institution: "Wheaton College (IL)",
+    date: "2019-2023",
+    description: [
+      B.S. Applied Mathematics with Statistics \
+      B.A. Economics \
+      Edman Presidential Scholarship
+    ]
+  )
+])
+
+#section("Professional Experience", [
+  #list-appointments("education.yaml")
+])
+
+#section("Articles in Preparation", [
+  #citation(
+    authors: "Carson Slater, Ryan Shepler, Samantha Bryan, Tzahi Y. Cath, and Amanda S. Hering",
+    year: "2026",
+    title: "Identifying Outdoor Watering Events with High-Frequency Metering Data to Assess Residential Water Consumption",
+    venue: "In Preparation"
+  )
+])
+
+#section("Peer-Reviewed Publications", [
+  #citation(
+    authors: "Brittany J. Carnathan, Dinny Stevens, Swarna Shikha, Carson Slater, Nathen Byford, Rodney X. Sturdivant, Kuzy Zarzosa, W. Evan Braswell, and Christie M. Sayes",
+    year: "2025",
+    title: "Assessing the Effects of Surface-Stabilized Zero-Valent Iron Nanoparticles on Diverse Bacteria Species Using Complementary Statistical Models",
+    venue: "Journal of Functional Biomaterials 16 (3)",
+    url: "https://doi.org/10.3390/jfb16030113"
+  )
+])
+
+#section("Conference Proceedings & Other Articles", [
+  #citation(
+    authors: "Carson Slater, Ryan Shepler, Samantha Bryan, Tzahi Y. Cath, and Amanda S. Hering",
+    year: "2026",
+    title: "Identifying Outdoor Watering Events with High-Frequency Metering
+Data to Assess Residential Water Consumption",
+    venue: "2026 ",
+    url: "https://doi.org/10.1109/WMCS62019.2024.10619025"
+  )
+  #citation(
+    authors: "Jonathan E. Swindell, Carson Slater, Samuel Hussey, Charles Baylis, and Robert J. Marks",
+    year: "2024",
+    title: "Assessing Interference with Regression Analysis Techniques",
+    venue: "2024 IEEE Texas Symposium on Wireless and Microwave Circuits and Systems (WMCS)",
+    url: "https://doi.org/10.1109/WMCS62019.2024.10619025"
+  )
+  #citation(
+    authors: "Amanda S. Hering, Douglas Nychka, Luke Durell, Carson Slater, Michael Poor, Greg Hamerly, and Tzahi Y. Cath",
+    year: "2024",
+    title: "Mo(Wa)²TER Introduction to Data Science Course Material",
+    venue: "Harvard Dataverse",
+    url: "https://doi.org/10.7910/DVN/BZJW2E"
+  )
+  #citation(
+    authors: "Carson Slater and Ying Li",
+    year: "2022",
+    title: "Forecasting Fast-Moving Consumer Goods with Generalized Additive Models",
+    venue: "2022 University of Illinois Chicago Undergraduate Mathematics Symposium",
+    note: "Poster Presentation"
+  )
+])
+
+#section("Honors & Awards", [
+  #list-honors("honors.yaml")
+])
+
+#section("Service & Volunteer", [
+  #list-positions("positions.yaml")
+])
+
+#section("Skills", [
+  #grid(
+    columns: (1.2in, 1fr),
+    gutter: 0.8em,
+    [*Technology*], [Docker, Positron ($approx$ VS Code), Git/Github, reveal.js, R/RStudio, SQL, duckDB, #latex.],
+    [*Python*], [pandas, numpy, PyTorch (Lightning), plotnine, seaborn, plotly, scikit‑learn, Jupyter],
+    [*R*], [tidyverse (dplyr, ggplot2, etc.), TensorFlow (Keras), torch, shiny, RMarkdown/Quarto, rstan, rjags, caret, tidymodels, targets (gittargets, proffer, etc.)],
+    [*Statistics*], [statistical modeling, hypothesis testing, mixture models, time series, regression, linear mixed models, clustering, classification, deep learning, PCA, random forests, ensemble models (e.g., XGBoost), SVM, Bayesian methods, spatiotemporal modeling]
+  )
+])
+```

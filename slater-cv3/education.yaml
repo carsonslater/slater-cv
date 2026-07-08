@@ -1,0 +1,49 @@
+education:
+  Baylor University:
+    - degree: PhD Statistical Science
+      year:
+        start: 2024
+        end: "2027 [Expected]"
+      description: "Advised by Amanda S. Hering. Research involves developing statistical methods for time series clustering with applications in urban water distribution."
+    - degree: M.S. Statistical Science
+      year:
+        start: 2023
+        end: 2024
+  Wheaton College (IL):
+    - degree: B.S. Applied Mathematics with Statistics
+      year:
+        start: 2019
+        end: 2023
+    - degree: B.A. Economics
+      year:
+        start: 2019
+        end: 2023
+      description: "(GPA: 3.46/4.0), Edman Presidential Scholarship; Varsity Baseball Athlete (NCAA-DIII)"
+
+appointments:
+  Baylor University:
+  - position: Research Assistant
+    year:
+      start:
+        month: "January"
+        year: 2024
+    description: "Developing statistical methods for urban water distribution processes, leveraging unsupervised learning on time series for customer-level water utility data. Research is funded by Denver Water."
+  - position: Graduate Assistant
+    year:
+      start:
+        month: "August"
+        year: 2023
+      end:
+        month: "December"
+        year: 2025
+    description: "Consulted for ongoing interdisciplinary research in the computer engineering and environmental science departments, and for the American Holistic Nursing Association."
+  Wheaton College:
+  - position: Mathematics Teaching Assistant
+    year:
+      start:
+        month: "August"
+        year: 2022
+      end:
+        month: "May"
+        year: 2023
+    description: "Facilitated help sessions for undergraduate students in the topics of Machine Learning and Probability Theory."
