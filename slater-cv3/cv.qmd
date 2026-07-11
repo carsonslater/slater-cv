@@ -79,10 +79,9 @@ format:
   #citation(
     authors: "Carson Slater, Ryan Shepler, Samantha Bryan, Tzahi Y. Cath, and Amanda S. Hering",
     year: "2026",
-    title: "Identifying Outdoor Watering Events with High-Frequency Metering
-Data to Assess Residential Water Consumption",
-    venue: "2026 ",
-    url: "https://doi.org/10.1109/WMCS62019.2024.10619025"
+    title: "Identifying Outdoor Watering Events with High-Frequency Metering Data to Assess Residential Water Consumption",
+    venue: "2026 University Council on Water Resources",
+    note: "Poster Presentation"
   )
   #citation(
     authors: "Jonathan E. Swindell, Carson Slater, Samuel Hussey, Charles Baylis, and Robert J. Marks",
