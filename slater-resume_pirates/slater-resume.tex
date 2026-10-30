@@ -1,0 +1,214 @@
+\documentclass{resume} % Use the custom resume.cls style
+
+\usepackage[left=0.4 in,top=0.4in,right=0.4 in,bottom=0.4in]{geometry} % Document margins
+\usepackage{pandora}
+\usepackage[OT1]{fontenc}
+\newcommand{\tab}[1]{\hspace{.2667\textwidth}\rlap{#1}}
+\newcommand{\itab}[1]{\hspace{0em}\rlap{#1}}
+\name{Carson Slater} % Your name
+% You can merge both of these into a single line, if you do not have a website.
+\address{+1(480) 320-8898 \\ Waco, TX}
+\address{\href{mailto:carsonslater7@gmail.com}{carsonslater7@gmail.com} \\ \href{https://www.linkedin.com/in/carsonslateratbaylor/}{in/carsonslateratbaylor} \\ \href{https://carsonslater.github.io}{carsonslater.github.io}}  %
+
+\begin{document}
+\footnotesize
+
+%----------------------------------------------------------------------------------------
+%	OBJECTIVE
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Summary}
+
+{Statistical Science Ph.D. candidate and former collegiate baseball player with a passion for sabermetrics. Researcher and consultant who helps stakeholders turn abstract questions into data-driven decisions and frameworks, with experience handling large insurance and utility data.}
+
+
+\end{rSection}
+
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Education}
+
+{\bf Ph.D. Statistical Science}, Baylor University \hfill {2024 - 2027 [Expected]}\\
+Advised by \href{https://statistics.artsandsciences.baylor.edu/person/dr-amanda-s-hering}{Amanda S. Hering} $\cdot$ Concentrations in \textit{Data Science} and \textit{Biostatistics} \\
+Research involves developing unsupervised learning methods for time series with applications in municipal water distribution.
+
+{\bf M.S. Statistical Science}, Baylor University \hfill {2023 - 2024}\\
+(GPA: 3.86/4.0)
+
+{\bf B.S. Applied Mathematics with Statistics}, Wheaton College (IL) \hfill {2019 - 2023}\\
+{\bf B.A. Economics}\\
+(GPA: 3.46/4.0), \textit{Edman Presidential Scholarship}\\
+\textit{Varsity Baseball Athlete (NCAA-DIII)}
+
+\end{rSection}
+
+
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+
+\begin{rSection}{EXPERIENCE}
+
+\textbf{Data Analyst} \hfill August 2026 - Present\\
+Texas Farm Bureau Insurance Companies, \textit{Part Time} \hfill \textit{Waco, TX}
+ \begin{itemize}
+    \itemsep -3pt {}
+     \item Employing GLMs as pricing models on 100+ GB datasets to improve the auto insurance rating plan, working within regulatory requirements of the Texas Department of Insurance.
+     \item Ingesting and evaluating new vendor data to assess if purchasing for auto insurance rating would be profitable, evaluating over 200 potential new rating variables.
+     \item Working with millions of policy rows to answer ad-hoc business questions for stakeholders.
+ \end{itemize}
+
+\textbf{Research Assistant} \hfill January 2024 - July 2026\\
+Baylor University -- Research funded by \href{https://www.denverwater.org}{Denver Water} \hfill \textit{Waco, TX}
+ \begin{itemize}
+    \itemsep -3pt {}
+     \item Developed clustering methods for assessing urban water consumption with IoT meters.
+     \item Extracted, transformed, and loaded unstructured data for analyses for Denver Water collaborators.
+     \item Collaborated with domain experts in urban water demand planning to assess water conservation interventions, implementing rigorous hypothesis testing and building Shiny dashboards to visualize individual and aggregate customer trends.
+     \item Engineered features from household-level billing and water usage time series to perform market segmentation for Denver Water's single-family residential customer base, coming up with seven user personas to characterize their population ($\sim$200k homes).
+     \item Edited and reviewed material for an undergraduate intro to data science course.
+ \end{itemize}
+
+\textbf{Statistical Consultant} \hfill August 2024 - July 2026\\
+Baylor University Statistical Consulting Center\hfill \textit{Waco, TX}
+ \begin{itemize}
+    \itemsep -3pt {}
+     \item Created and assessed a quantitative framework for assessing the success of college athletics coaches for the Baylor Athletic director. Web scraped and compiled a large dataset for modeling collegiate coach success using both frequentist and bayesian mixed effects models.
+     \item Consulted for ongoing interdisciplinary research in the computer engineering and environmental science departments, and for the American Holistic Nursing Association.
+     \item Delivered quality reports for each client and had regular meetings to discuss the project, the methodology and results.
+    %  \item Teaching assistant for Computational Statistics (\textsf{R}).
+ \end{itemize}
+
+\textbf{Academic Coach} \hfill January - May 2023\\
+Wheaton Academy Center for Lifelong Learning \hfill \textit{West Chicago, IL}
+ \begin{itemize}
+    \itemsep -3pt {}
+     \item Mentored students 1-on-1 to sharpen math skills from Algebra I to AP Statistics.
+ \end{itemize}
+
+\textbf{Mathematics Teaching Assistant} \hfill August 2022 - May 2023\\
+Wheaton College \hfill \textit{Wheaton, IL}
+ \begin{itemize}
+    \itemsep -3pt {}
+     \item Facilitated help sessions for undergraduate students in the topics of Machine Learning and Probability Theory.
+ \end{itemize}
+
+ \textbf{Biostatistics Fellow} \hfill June - July 2022\\
+ Duke/North Carolina State Summer Institute for Biostatistics \hfill \textit{Raleigh/Durham, NC}
+ \begin{itemize}
+    \itemsep -3pt {}
+     \item Engaged in undergradute discussions and biostatistical methods, clinical trials, and statistical programming.
+     \item Participated in a data hackathon studying myocardial infarction to uncover risk factors for a particular population.
+ \end{itemize}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+% TECHINICAL STRENGTHS
+%----------------------------------------------------------------------------------------
+\begin{rSection}{SKILLS}
+
+\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
+Technology & Positron ($\approx$ VS Code), RStudio, Docker, Git/Github, reveal.js, SQL, duckDB, \LaTeX \\
+Python & statsmodels, scikit-learn, polars, pandas, numpy, PyTorch, plotnine, seaborn, plotly, scikit-learn, Jupyter \\
+\textsf{R} & \parbox[t]{0.85\textwidth}{tidyverse (dplyr, ggplot2, etc.), TensorFlow (Keras), torch, shiny, RMarkdown/Quarto, rstan, rjags, caret, tidymodels, targets (gittargets, proffer, etc.)} \\
+Stats \& ML & \parbox[t]{0.85\textwidth}{statistical modeling, hypothesis testing, mixture models for clustering, time series, linear mixed models, deep learning (convolutional neural networks, denoising diffusion probabilistic models), PCA, tree-based models, SVM, Bayesian methods, spatiotemporal modeling, survival analysis} \\
+Coursework & \parbox[t]{0.85\textwidth}{Statistical Bioinformatics, Deep Learning, Bayesian Methods/Theory, Survival Analysis, Time Series, Multivariate Statistics, Theory of Statistics, Statistical Methods, Computational Statistics, Numerical Analysis, Machine Learning, Probability Theory, Real Analysis, Intensive Introduction to Computer Science (Harvard), Econometrics} \\
+\end{tabular}\\
+\end{rSection}
+
+
+%----------------------------------------------------------------------------------------
+% Leadership
+%----------------------------------------------------------------------------------------
+\begin{rSection}{Leadership Experience}
+
+
+ \textbf{President} \hfill May 2026 - Present\\
+Baylor University Statistical Science Paper Club \hfill \textit{Waco, TX}
+ \begin{itemize}
+    \itemsep -3pt {}
+     \item Sourcing and facilitating discussions on frontier papers in statistics, biostatistics, and machine learning for graduate students in the statistical science department.
+   %   \item Leading professional development seminar for first and second year statistics PhD students.
+ \end{itemize}
+
+\textbf{President} \hfill March 2024 - May 2025\\
+Baylor University Sports Analytics Club \hfill \textit{Waco, TX}
+ \begin{itemize}
+    \itemsep -3pt {}
+     \item Led a team of undergraduates in submitting a March Madness bracket challenge submission on Kaggle.
+     \item Taught undergraduates basic version control, R programming, statistical and machine learning topics.
+ \end{itemize}
+
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+% PUBLICATIONS
+%----------------------------------------------------------------------------------------
+\begin{rSection}{Peer-Reviewed Publications}
+
+\hangindent=1.5em Brittany J. Carnathan, Dinny Stevens, Swarna Shikha, \textbf{Carson Slater}, Nathen Byford, Rodney X. Sturdivant, Kuzy Zarzosa, W. Evan Braswell, and Christie M. Sayes. 2025. ``Assessing the Effects of Surface-Stabilized Zero-Valent Iron Nanoparticles on Diverse Bacteria Species Using Complementary Statistical Models''. \textit{Journal of Functional Biomaterials} 16 (3). \href{https://doi.org/10.3390/jfb16030113}{DOI: 10.3390/jfb16030113}
+
+\end{rSection}
+
+\begin{rSection}{Manuscripts in Progress}
+
+\hangindent=1.5em \textbf{Carson Slater}, Ryan Shepler, Samantha Bryan, Tzahi Y. Cath, and Amanda S. Hering. 2026. ``Identifying Outdoor Watering Events with High-Frequency Metering Data to Assess Residential Water Consumption''. \textit{In Preparation for Submission to Discover Water.}
+
+\end{rSection}
+
+\begin{rSection}{Conference Proceedings \& Other Works}
+\hangindent=1.5em \textbf{Carson Slater}, Ryan Shepler, Samantha Bryan, Tzahi Y. Cath, and Amanda S. Hering. 2026. ``Identifying Outdoor Watering Events with High-Frequency Metering Data to Assess Residential Water Consumption''. \textit{The 2026 Joint Statistical Meetings}, Thomas M. Menino Convention \& Exhibition Center, Boston, MA, August 1-6, 2026. [Poster Presentation]
+
+\vspace{0.25cm}
+
+\hangindent=1.5em Jonathan E. Swindell, \textbf{Carson Slater}, Samuel Hussey, Charles Baylis, and Robert J. Marks. 2024. ``Assessing Interference with Regression Analysis Techniques''. \textit{2024 IEEE Texas Symposium on Wireless and Microwave Circuits and Systems (WMCS)}. \href{https://doi.org/10.1109/WMCS62019.2024.10619025}{DOI: 10.1109/WMCS62019.2024.10619025}.
+
+\vspace{0.25cm}
+
+\hangindent=1.5em Amanda S. Hering, Douglas Nychka, Luke Durell, \textbf{Carson Slater}, Michael Poor, Greg Hamerly, and Tzahi Y. Cath. 2024. ``Mo(Wa)$^2$TER Introduction to Data Science Course Material''. \textit{Harvard Dataverse}. \href{https://doi.org/10.7910/DVN/BZJW2E}{DOI: 10.7910/DVN/BZJW2E}.
+
+\vspace{0.25cm}
+
+\hangindent=1.5em \textbf{Carson Slater} and Ying Li. 2022. ``Forecasting Fast-Moving Consumer Goods with Generalized Additive Models''. \textit{2022 University of Illinois Chicago Undergraduate Mathematics Symposium}, University of Illinois - Chicago, Chicago, IL, USA, November 12, 2022. [Poster Presentation]
+
+\end{rSection}
+
+
+
+
+% \begin{rSection}{PROJECTS}
+% \vspace{-1.25em}
+% \item \textbf{Hiring Search Tool.} {Built a tool to search for Hiring Managers and Recruiters by using ReactJS, NodeJS, Firebase and boolean queries. Over 25000 people have used it so far, with 5000+ queries being saved and shared, and search results even better than LinkedIn! \href{https://hiring-search.careerflow.ai/}{(Try it here)}}
+% \item \textbf{Short Project Title.} {Build a project that does something and had quantified success using A, B, and C. This project's description spans two lines and also won an award.}
+% \item \textbf{Short Project Title.} {Build a project that does something and had quantified success using A, B, and C. This project's description spans two lines and also won an award.}
+% \end{rSection}
+
+% %----------------------------------------------------------------------------------------
+% \begin{rSection}{Extra-Curricular Activities}
+% \begin{itemize}
+%     \item
+%     \item	Sample bullet point.
+% \end{itemize}
+
+
+% \end{rSection}
+
+% %----------------------------------------------------------------------------------------
+% % \begin{rSection}{Leadership}
+% % \textbf{Volunteer Intern} \hfill 2023\\
+% % Křesťanská Akademie Mladých (CZ) \hfill \textit{Czech Republic}
+% %  \begin{itemize}
+% %     \itemsep -3pt {}
+% %      \item Assisting local CB churches by teaching English and sports in Czech Republic schools and camps.
+% %  \end{itemize}
+% % \end{rSection}
+
+
+\end{document}
